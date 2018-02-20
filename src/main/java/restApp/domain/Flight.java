@@ -1,11 +1,12 @@
 package restApp.domain;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.List;
 
 @Entity
 @Table(name = "t_zboruri")
-public class Flight {
+public class Flight implements Serializable{
 
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)

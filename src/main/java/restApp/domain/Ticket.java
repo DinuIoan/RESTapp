@@ -1,10 +1,11 @@
 package restApp.domain;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "t_bilete")
-public class Ticket {
+public class Ticket implements Serializable {
 
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
